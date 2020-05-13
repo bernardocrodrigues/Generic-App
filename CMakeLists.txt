@@ -5,8 +5,6 @@ project(Yocto_App
         VERSION 0.1.0
         LANGUAGES C CXX)
 
-# set(CMAKE_CXX_COMPILER "clang++")
-
 # specify the default C++ standard
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
@@ -22,7 +20,7 @@ add_compile_options(-Wall)
 
 add_subdirectory(src/hello_c_11)
 add_subdirectory(src/hello_cxx_11)
-# add_subdirectory(src/hello_cxx_14)
-# add_subdirectory(src/hello_cxx_20)
+add_subdirectory(src/hello_cxx_14)
+add_subdirectory(src/hello_cxx_20)
 
 # configure_file(TutorialConfig.h.in TutorialConfig.h)
